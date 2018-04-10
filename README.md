@@ -33,5 +33,5 @@ Same goes with when you're finding translation errors: Just open an issue and le
 
 ## Assets
 
-Use https://github.com/puppetlabs/go-bindata go generate assets.go
+Use https://github.com/puppetlabs/go-bindata to generate assets.go
 
