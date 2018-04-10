@@ -37,7 +37,7 @@ func (s storageRedis) redisKey() string {
 }
 
 func (s storageRedis) Create(secret string) (string, error) {
-	id := uuid.NewV4().String()
+	id := uuid.Must(uuid.NewV4()).String()
 	_, err := s.conn.HSet(s.redisKey(), id, secret)
 
 	return id, err

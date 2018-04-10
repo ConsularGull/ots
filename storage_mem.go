@@ -13,7 +13,7 @@ func newStorageMem() storage {
 }
 
 func (s storageMem) Create(secret string) (string, error) {
-	id := uuid.NewV4().String()
+	id := uuid.Must(uuid.NewV4()).String()
 	s.store[id] = secret
 
 	return id, nil
